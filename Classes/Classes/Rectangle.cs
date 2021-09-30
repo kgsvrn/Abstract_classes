@@ -40,7 +40,7 @@ namespace Classes
             {
                 double s;
                 s = a * b;
-                Console.WriteLine("Площадь = "+ s);
+                Console.WriteLine($"Площадь {Name}= {s} " , s);
                 return s;
             }
         }
@@ -49,7 +49,7 @@ namespace Classes
             {
                 double p;
                 p = 2 * (a + b);
-                Console.WriteLine("Периметр = {0}{2}{1}", p,a,b);
+                Console.WriteLine($"Периметр {Name} = {p}", p);
                 return p;
             }
         }
