@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Classes
 {
-    class circle : Figure
+    class Circle : Figure
     {
         double r;
-        public circle(string name, double r) : base(name)
+        public Circle(string name, double r) : base(name)
         {
             if (r > 0)
             {
@@ -38,9 +38,9 @@ namespace Classes
         public override double Area2()
         {
             {
-                double s, pi;
-                pi = 3.14159265359;
-                s = pi * r * r;
+                double s;
+               
+                s = Math.PI * r * r;
                 Console.WriteLine($"Площадь {Name} = {s}" , s);
                 return s;
             }
@@ -48,9 +48,9 @@ namespace Classes
         public override double Area()
         {
             {
-                double p, pi;
-                pi = 3.14159265359;
-                p = 2 * pi * r;
+                double p;
+               
+                p = 2 * Math.PI * r;
                 Console.WriteLine($"Периметр {Name} = {p}", p);
                 return p;
             }

@@ -57,7 +57,7 @@ namespace Classes
         {
             base.Print();
             Console.WriteLine(@"a = "+ a);
-            Console.WriteLine($"b = {b}");
+            Console.WriteLine($"b = {b}", b);
         }
     }
 }
